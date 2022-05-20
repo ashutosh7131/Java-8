@@ -1,0 +1,8 @@
+package programming;
+
+public class Snippet {
+	public static void main(String[] args) {
+		numbers.stream().forEach(FP01Functional::print);
+	}
+}
+

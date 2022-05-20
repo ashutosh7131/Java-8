@@ -2,7 +2,7 @@ package programming;
 
 import java.util.List;
 
-public class FP01Functional {
+public class FP01Functional_Latest {
 
 	public static void main(String[] args) {
 
@@ -10,15 +10,13 @@ public class FP01Functional {
 
 	}
 	
-	/*
-	 * private static void print(int number) { System.out.
-	 * println("We are Printing Numbers in Sequence using Functional Approach: " +
-	 * number); }
-	 */
+	private static void print(int number) {
+		System.out.println("We are Printing Numbers in Sequence using Functional Approach: " + number);
+	}
 
 	private static void printAllNumbersInListFunctional(List<Integer> numbers) {
 
-		//numbers.stream().forEach(FP01Functional::print);
+		numbers.stream().forEach(FP01Functional_Latest::print);
 		numbers.stream().forEach(System.out::println);
 
 	}

@@ -2,7 +2,7 @@ package programming;
 
 import java.util.List;
 
-public class FP01Functional {
+public class FP01Functional_EvenNumbers {
 
 	public static void main(String[] args) {
 
@@ -15,11 +15,15 @@ public class FP01Functional {
 	 * println("We are Printing Numbers in Sequence using Functional Approach: " +
 	 * number); }
 	 */
+	
+	private static boolean isEven(int number) {
+		return number%2==0;
+	}
 
 	private static void printAllNumbersInListFunctional(List<Integer> numbers) {
 
 		//numbers.stream().forEach(FP01Functional::print);
-		numbers.stream().forEach(System.out::println);
+		numbers.stream().forEach(System.out::print);
 
 	}
 

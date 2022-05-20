@@ -6,7 +6,7 @@ public class FP01Functional_EvenNumbers {
 
 	public static void main(String[] args) {
 
-		printEvenNumbersInListFunctional(List.of(12, 9, 13, 4, 6, 2, 4, 12, 15));
+		printEvtenNumbersInListFunctional(List.of(12, 9, 13, 4, 6, 2, 4, 12, 15));
 
 	}
 

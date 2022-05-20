@@ -2,7 +2,7 @@ package programming;
 
 import java.util.List;
 
-public class FP01Functional_EvenNumbers {
+public class FP01Functional_EvenNumbers_LamdaExpression {
 
 	public static void main(String[] args) {
 
@@ -10,13 +10,13 @@ public class FP01Functional_EvenNumbers {
 
 	}
 
-	/*
-	 * private static boolean isEven(int number) { return number % 2 == 0; }
-	 */
+	private static boolean isEven(int number) {
+		return number % 2 == 0;
+	}
 
 	private static void printEvenNumbersInListFunctional(List<Integer> numbers) {
 
-		numbers.stream().filter(number-> number%2==0).
+		numbers.stream().filter(FP01Functional_EvenNumbers_LamdaExpression::isEven).
 		forEach(System.out::println);
 
 	}

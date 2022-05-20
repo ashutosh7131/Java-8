@@ -1,0 +1,16 @@
+package programming;
+
+import java.util.List;
+
+public class Courses {
+
+	public static void main(String[] args) {
+		
+		List<String> courses = List.of("Spring","Spring Boot","API","Microservices","AWS","PCF","Azure","Docker","Kubernetes");
+		for(String course:courses) {
+			System.out.println("Printing Courses in Old Fashion: " + course);
+		}
+
+	}
+
+}

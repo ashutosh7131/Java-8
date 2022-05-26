@@ -13,14 +13,14 @@ public class FP02Functional {
 
 	}
 
+	public static int sum(int a, int b) {
+		return a + b;
+	}
+
 	private static int addListFunctional(List<Integer> numbers) {
-		
-		int sum = 0;
-		for(int number:numbers) {
-			sum = sum + number;
-		}
-		
-		return sum;
+
+		return numbers.stream().reduce(0, FP02Functional::sum);
+
 	}
 
 }

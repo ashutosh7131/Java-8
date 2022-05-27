@@ -1,5 +1,6 @@
 package programming;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class Courses_FunctionalProgramming {
@@ -13,6 +14,7 @@ public class Courses_FunctionalProgramming {
 		courses.stream().filter(courseNameLength -> courseNameLength.length() >= 4).forEach(System.out::println);
 		courses.stream().map(courseNameCharacterLength -> courseNameCharacterLength.length()).forEach(System.out::println);
 		courses.stream().sorted().forEach(System.out::println);
+		courses.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
 
 	}
 

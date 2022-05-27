@@ -12,6 +12,7 @@ public class Courses_FunctionalProgramming {
 		courses.stream().filter(course -> course.contains("Spring")).forEach(System.out::println);
 		courses.stream().filter(courseNameLength -> courseNameLength.length() >= 4).forEach(System.out::println);
 		courses.stream().map(courseNameCharacterLength -> courseNameCharacterLength.length()).forEach(System.out::println);
+		courses.stream().sorted().forEach(System.out::println);
 
 	}
 

@@ -2,6 +2,7 @@ package programming;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Courses_FunctionalProgramming {
 
@@ -15,6 +16,7 @@ public class Courses_FunctionalProgramming {
 		courses.stream().map(courseNameCharacterLength -> courseNameCharacterLength.length()).forEach(System.out::println);
 		courses.stream().sorted().forEach(System.out::println);
 		courses.stream().sorted(Comparator.reverseOrder()).forEach(System.out::println);
+		courses.stream().map(x -> x.length()).collect(Collectors.toList()).forEach(System.out::println);;
 
 	}
 

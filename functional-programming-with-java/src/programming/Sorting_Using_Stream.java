@@ -23,7 +23,6 @@ public class Sorting_Using_Stream {
 
 		List<Employee> sortedList = empList.stream().sorted(Comparator.comparingInt(Employee::getAge))
 				.collect(Collectors.toList());
-
 		sortedList.forEach(System.out::println);
 
 	}
